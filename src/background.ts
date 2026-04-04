@@ -110,7 +110,7 @@ function replaceURL(inputURL: string) {
 		let params = url.searchParams
 
 		for (let param of params.keys()) {
-			if (param == 'si') {
+			if (param == 'si' || param == 'pp') {
 				params.delete(param)
 			}
 		}

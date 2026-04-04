@@ -35,7 +35,7 @@ async function handleTargetElement(targetElement: HTMLInputElement) {
 		let params = url.searchParams
 		// Remove all parameters that are not allowed
 		for (let param of params.keys()) {
-			if (param == 'si') {
+			if (param == 'si' || param == 'pp') {
 				params.delete(param)
 			}
 		}
