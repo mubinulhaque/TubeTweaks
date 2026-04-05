@@ -42,7 +42,7 @@ if (detectBrowser() != 'chromium') {
 			return {};
 		}
 
-		if ((details.url.includes('youtu.be') || details.url.includes('youtube.com')) && details.url.includes('si=') && await getSetting('shareAntiTrack.preventLoading', true)) {
+		if ((details.url.includes('youtu.be') || details.url.includes('youtube.com')) && (details.url.includes('si=') || details.url.includes('pp=')) && await getSetting('shareAntiTrack.preventLoading', true)) {
 			const newUrl = replaceURL(details.url);
 			if (details.url != newUrl) {
 				return { redirectUrl: newUrl }
