@@ -30,7 +30,12 @@
 	},
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "tubetweaks@extensions.xenorio.xyz"
+			"id": "tubetweaksplus@mubinulhaque",
+			"data_collection_permissions": {
+				"required": [
+					"websiteContent"
+				]
+			}
 		}
 	}
 }
